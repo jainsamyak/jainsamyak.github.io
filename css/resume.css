@@ -5,8 +5,7 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 54px;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;  padding-top: 54px;
   color: #868e96;
 }
 
@@ -23,8 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;  font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
 }
@@ -50,7 +48,6 @@ p.lead {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 1.5rem;
 }
 
@@ -72,12 +69,26 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: rgba(25, 95, 199, 0.42);
 }
 
 .dev-icons {
   font-size: 3rem;
 }
+
+.dev-icons .list-inline-item {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dev-icons .list-inline-item span {
+  font-size: 1rem;
+  text-align: center;
+}
+.dev-icons .list-inline-item i{
+  text-align: center;
+}
+
 
 .dev-icons .list-inline-item i:hover {
   color: #BD5D38;
@@ -176,11 +187,11 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: rgb(12, 51, 80) !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: rgb(40, 139, 215) !important;
 }
 
 a {
@@ -189,4 +200,41 @@ a {
 
 a:hover, a:focus, a:active {
   color: #824027;
+}
+/* More Custo CSS */
+.wrapper.section-1{
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 3rem;
+  background: linear-gradient(#E0ECF5,#DBE2E7);
+}
+.project-wrapper{
+  color: white;
+}
+.project-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.number{
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project-heading{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.project-content{
+  padding: 2rem;
+}
+.awards i{
+  font-size: 1.4rem;
+}
+.awards li{
+  padding: 0.3rem;
 }
