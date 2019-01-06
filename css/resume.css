@@ -267,9 +267,17 @@ a:active {
 .project-wrapper {
     color: white;
 }
-
+.carousel-caption{
+  width: 100% !important;
+  bottom: 0px;
+  right: 0px;
+  left: 0%; 
+}
 .project {
     background: rgba(25, 95, 199, 0.8) !important;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 .project-content {
