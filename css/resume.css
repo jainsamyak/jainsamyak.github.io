@@ -4,10 +4,16 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
+*{
+  transition: all 300ms ease-in-out;
+ }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;  padding-top: 54px;
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
   color: #868e96;
+  
 }
+
 
 @media (min-width: 992px) {
   body {
@@ -22,7 +28,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;  font-weight: 700;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
 }
@@ -37,15 +44,17 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 p.lead {
   font-size: 1.15rem;
   font-weight: 400;
+  max-width: 75rem;
 }
 
 .subheading {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
@@ -163,7 +172,6 @@ p.lead {
 section.resume-section {
   padding-top: 5rem !important;
   padding-bottom: 5rem !important;
-  max-width: 75rem;
 }
 
 section.resume-section .resume-item .resume-date {
@@ -171,6 +179,10 @@ section.resume-section .resume-item .resume-date {
 }
 
 @media (min-width: 768px) {
+  
+  .dev-icons {
+    font-size: 2rem !important;
+  }
   section.resume-section {
     min-height: 100vh;
   }
@@ -178,14 +190,47 @@ section.resume-section .resume-item .resume-date {
     min-width: 18rem;
   }
 }
+@media(max-width:768px){
+  :root{
+    font-size: 14px;
+  }
+  .resume-button{
+    width: 100% !important;
+  }
+  .project{
+    flex-direction: column;
+    max-height: 30vh;
+  }
+  .carousel-item{
+    max-height: 70vh !important;
+  }
+  .number{
+    padding-bottom: 0rem !important;
+  }
+  .project-heading{
+    font-size: 1.6rem !important;
+  }
+  .carousel-item{
+    height: 50vh;
+  }
+  .dev-icons {
+    font-size: 1.4rem !important;
+  }
+}
+
 
 @media (min-width: 992px) {
+  
   section.resume-section {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
   }
 }
-
+@media (min-width:1280px){
+  .dev-icons {
+    font-size: 3rem !important;
+  }
+}
 .bg-primary {
   background-color: rgb(12, 51, 80) !important;
 }
@@ -195,22 +240,23 @@ section.resume-section .resume-item .resume-date {
 }
 
 a {
-  color: #BD5D38;
+  color: rgba(14, 66, 143, 0.81);
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+
+  text-decoration: none;
+  color: #77a3e4;
 }
 /* More Custo CSS */
-.wrapper.section-1{
-  background-size: cover;
-  background-attachment: fixed;
-  background-size: cover;
-  font-size: 3rem;
-  background: linear-gradient(#E0ECF5,#DBE2E7);
-}
+
+
 .project-wrapper{
   color: white;
+  
+}
+.project{
+  background: rgba(25, 95, 199, 0.8) !important;
 }
 .project-content{
   width: 100%;
@@ -237,4 +283,37 @@ a:hover, a:focus, a:active {
 }
 .awards li{
   padding: 0.3rem;
+}
+hr{
+  height: 0.1rem;
+}
+.carousel-item {
+height:100vh;
+overflow: hidden;
+background: white;
+width: 100%;
+}
+.carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+}
+.resume-button{
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 30%;
+  
+}
+.resume-button:hover{
+  animation: drop-shadow 300ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes drop-shadow{
+  from{
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  }
+  to{
+    box-shadow: 5px 7px 5px rgba(158, 216, 162, 0.6);
+  }
 }

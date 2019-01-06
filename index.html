@@ -51,7 +51,7 @@
             <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
@@ -65,14 +65,14 @@
       <div class="wrapper section-1">
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
-          <h1 class="mb-0">Samyak
+          <h1 >Samyak
             <span class="text-primary">Jain</span>
           </h1>
           <div class="subheading mb-5">
             Full Stack Developer & Data Science Wizard
           </div>
           <p class="lead mb-5">
-            Hi there. I’m Samyak Jain, a versatile and creative developer, a quick learner and a believer in leading by example. I have a passion for data science & machine learning and my skill-based degree has allowed me to equip myself with the required skillset through applied learning, hands-on projects, and multiple industry exposures.
+            Hi there! I’m Samyak Jain, a versatile and creative developer, having a passion for data science & machine learning. My skill-based degree has allowed me to equip myself with the required skillset through applied learning, hands-on projects, and multiple industry exposures.
           </p>
           <div class="social-icons">
             <a href="http://www.linkedin.com/in/samyakjain330" target="_blank">
@@ -85,10 +85,14 @@
               <i class="fab fa-facebook-f"></i>
             </a>
           </div>
+          
+            <a href="http://" class="btn btn-outline-success resume-button"><i class="fas fa-download"></i> View Resume</a>
         </div>
       </section>
     </div>
       <hr class="m-0">
+
+      <div class="wrapper section-2">
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
@@ -97,7 +101,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Intern - Robotic Process Automation</h3>
-              <div class="subheading mb-3">Infobeans</div>
+              <div class="subheading mb-3"><a href="http://">Infobeans</a></div>
               <p><ul>
                 <li>Pursued training and certifications from UiPath Academy and developed automation workflows for business process automation with 100% automation scope.</li>
                 <li>Developed an automation framework for attendance management capable of generating summarized attendance report for the entire batch within 30 seconds.</li>
@@ -112,7 +116,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Trainee - Angular 2.0</h3>
-              <div class="subheading mb-3">Diaspark</div>
+              <div class="subheading mb-3"><a href="http://">Diaspark</a></div>
               <p>
                 <ul>
                   <li>Completed my training on the basics of the JavaScript framework Angular 2 (TypeScript).
@@ -130,7 +134,7 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Educator & Content Creator</h3>
-              <div class="subheading mb-3">Unacademy</div>
+              <div class="subheading mb-3"><a href="http://">Unacademy</a></div>
               <p>
                 <ul>
                   <li>Prepared a series of courses on the essentials and fundamentals of programming in C++ that have been followed by  more than 4000 people and have obtained over 5500-lifetime views.</li>
@@ -145,6 +149,7 @@
         </div>
 
       </section>
+      </div>
 
       <hr class="m-0">
 
@@ -284,47 +289,80 @@
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
         
-          <div class="project-wrapper">
-            <div class="project d-flex">
-              <div class="number bg-danger subheading align-middle">01</div>
-              <div class="project-content bg-danger">
-                <div class="project-heading">Examination Management System</div>
-                <p>This project is focused on streamlining and automating the examination process of our university through a single web-based application (deployed on our University LAN)
-                  Handles all tasks & processes of the department from result feeding to mark sheet printing.
-                </p>
-
-              </div>
-            </div>
-            <div class="project-wrapper">
-              <div class="project d-flex">
-                <div class="number bg-warning subheading">02</div>
-                <div class="project-content bg-warning">
-                  <div class="project-heading">Portfolio of Artist - Nimisha Verma</div>
-                  <p>Developed & designed the complete portfolio of Nimisha Verma (artist, model & speaker).
-                    The website has a different color theme for each day of the week
-                    Uses AJAX to fetch & load  more than 200 images on the site in full resolution.
-                  </p>
-  
-                </div>
-              </div>
-            
-          </div>
-          <div class="project-wrapper">
-            <div class="project d-flex">
-              <div class="number bg-dark subheading">03</div>
-              <div class="project-content bg-dark">
-                <div class="project-heading">
-                  FB Post Downloader
-                  </div>
-                <p>This project is a data collector and statistics utility desktop application built using Electron.
-                  Allows viewing and downloading facebook posts of a public page along with the statistics.
-                  
-                </p>
-
-              </div>
-            </div>
           
-        </div>
+          <div class="project-wrapper">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block" src="img/IMG_0811.jpg" alt="First slide">
+                    <div class="carousel-caption">
+                        <div class="project d-flex fixed-bottom">
+                            <div class="number subheading align-middle">01</div>
+                            <div class="project-content">
+                              <div class="project-heading">Examination Management System</div>
+                              <p>This project is focused on streamlining and automating the examination process of our university through a single web-based application (deployed on our University LAN)
+                                Handles all tasks & processes of the department from result feeding to mark sheet printing.
+                              </p>
+              
+                            </div>
+                          </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/IMG_2134-min_edited.jpg" alt="Second slide">
+                      <div class="carousel-caption">
+                          <div class="project d-flex fixed-bottom">
+                              <div class="number subheading">02</div>
+                              <div class="project-content">
+                                <div class="project-heading">Portfolio of Artist - Nimisha Verma</div>
+                                <p>Developed & designed the complete portfolio of Nimisha Verma (artist, model & speaker).
+                                  The website has a different color theme for each day of the week
+                                  Uses AJAX to fetch & load  more than 200 images on the site in full resolution.
+                                </p>
+                
+                              </div>
+                            </div>
+                          
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block" src="img/IMG_2135-min_edited.jpg" alt="Third slide">
+                    <div class="carousel-caption">
+                        <div class="project d-flex fixed-bottom">
+                            <div class="number subheading">03</div>
+                            <div class="project-content">
+                              <div class="project-heading">
+                                FB Post Downloader
+                                </div>
+                              <p>This project is a data collector and statistics utility desktop application built using Electron.
+                                Allows viewing and downloading facebook posts of a public page along with the statistics.
+                                
+                              </p>
+              
+                          </div>
+                        
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+            
+              
+           
         </div>
       </section>
 
