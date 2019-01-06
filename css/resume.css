@@ -4,22 +4,21 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
  */
 
-*{
-  transition: all 300ms ease-in-out;
- }
-body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  padding-top: 54px;
-  color: #868e96;
-  
+* {
+    transition: all 300ms ease-in-out;
 }
 
+body {
+    font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    padding-top: 54px;
+    color: #868e96;
+}
 
 @media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
+    body {
+        padding-top: 0;
+        padding-left: 17rem;
+    }
 }
 
 h1,
@@ -28,292 +27,374 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #343a40;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #343a40;
 }
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem;
+    font-size: 6rem;
+    line-height: 5.5rem;
 }
 
 h2 {
-  font-size: 3.5rem;
+    font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 p.lead {
-  font-size: 1.15rem;
-  font-weight: 400;
-  max-width: 75rem;
+    font-size: 1.15rem;
+    font-weight: 400;
+    max-width: 75rem;
+    animation: dropIn 1200ms;
+}
+
+@keyframes dropIn {
+    from {
+        opacity: 0.3;
+        transform: translate(0px, -20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 
 .subheading {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 1.5rem;
+    font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .social-icons a {
-  display: inline-block;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff !important;
-  border-radius: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 3.5rem;
-  margin-right: 1rem;
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: #495057;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-right: 1rem;
 }
 
 .social-icons a:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 .social-icons a:hover {
-  background-color: rgba(25, 95, 199, 0.42);
+    background-color: rgba(25, 95, 199, 0.42);
 }
 
 .dev-icons {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .dev-icons .list-inline-item {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.dev-icons .list-inline-item span {
-  font-size: 1rem;
-  text-align: center;
-}
-.dev-icons .list-inline-item i{
-  text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.dev-icons .list-inline-item span {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.dev-icons .list-inline-item i {
+    text-align: center;
+}
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+    color: rgba(102, 148, 227, 0.797);
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 800;
-  letter-spacing: 0.05rem;
-  text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
 }
 
 #sideNav .navbar-toggler:focus {
-  outline-color: #d48a6e;
+    outline-color: #d48a6e;
 }
 
 @media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-brand {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
-  }
-  #sideNav .navbar-collapse {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item {
-    display: block;
-  }
-  #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-    display: block;
-  }
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 17rem;
+        height: 100vh;
+    }
+    #sideNav .navbar-brand {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem;
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 10rem;
+        max-height: 10rem;
+        border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    }
+    #sideNav .navbar-collapse {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto;
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block;
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block;
+    }
 }
 
 section.resume-section {
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important;
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
 }
 
 section.resume-section .resume-item .resume-date {
-  min-width: none;
+    min-width: none;
 }
 
 @media (min-width: 768px) {
-  
-  .dev-icons {
-    font-size: 2rem !important;
-  }
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-@media(max-width:768px){
-  :root{
-    font-size: 14px;
-  }
-  .resume-button{
-    width: 100% !important;
-  }
-  .project{
-    flex-direction: column;
-    max-height: 30vh;
-  }
-  .carousel-item{
-    max-height: 70vh !important;
-  }
-  .number{
-    padding-bottom: 0rem !important;
-  }
-  .project-heading{
-    font-size: 1.6rem !important;
-  }
-  .carousel-item{
-    height: 50vh;
-  }
-  .dev-icons {
-    font-size: 1.4rem !important;
-  }
+    .dev-icons {
+        font-size: 2rem !important;
+    }
+    section.resume-section {
+        min-height: 100vh;
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem;
+    }
 }
 
+@media(max-width:768px) {
+    :root {
+        font-size: 14px;
+    }
+    .resume-button {
+        width: 100% !important;
+    }
+    .project {
+        flex-direction: column;
+        max-height: 30vh;
+    }
+    .carousel-item {
+        max-height: 70vh !important;
+    }
+    .number {
+        padding-bottom: 0rem !important;
+    }
+    .project-heading {
+        font-size: 1.6rem !important;
+    }
+    .carousel-item {
+        height: 50vh;
+    }
+    .dev-icons {
+        font-size: 1.4rem !important;
+    }
+}
 
 @media (min-width: 992px) {
-  
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
+    section.resume-section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
 }
-@media (min-width:1280px){
-  .dev-icons {
-    font-size: 3rem !important;
-  }
+
+@media (min-width:1280px) {
+    .dev-icons {
+        font-size: 3rem !important;
+    }
 }
+
 .bg-primary {
-  background-color: rgb(12, 51, 80) !important;
+    background-color: rgb(12, 51, 80) !important;
 }
 
 .text-primary {
-  color: rgb(40, 139, 215) !important;
+    color: rgb(40, 139, 215) !important;
 }
 
 a {
-  color: rgba(14, 66, 143, 0.81);
+    color: rgba(14, 66, 143, 0.81);
 }
 
-a:hover, a:focus, a:active {
-
-  text-decoration: none;
-  color: #77a3e4;
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #77a3e4;
 }
+
 /* More Custo CSS */
 
+.project-wrapper {
+    color: white;
+}
 
-.project-wrapper{
-  color: white;
-  
+.project {
+    background: rgba(25, 95, 199, 0.8) !important;
 }
-.project{
-  background: rgba(25, 95, 199, 0.8) !important;
+
+.project-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.project-content{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+
+.number {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.number{
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.project-heading {
+    font-size: 1.8rem;
+    font-weight: 400;
 }
-.project-heading{
-  font-size: 1.8rem;
-  font-weight: 400;
+
+.project-content {
+    padding: 2rem;
 }
-.project-content{
-  padding: 2rem;
+
+.awards i {
+    font-size: 1.4rem;
 }
-.awards i{
-  font-size: 1.4rem;
+
+.awards li {
+    padding: 0.3rem;
 }
-.awards li{
-  padding: 0.3rem;
+
+hr {
+    height: 0.1rem;
 }
-hr{
-  height: 0.1rem;
-}
+
 .carousel-item {
-height:100vh;
-overflow: hidden;
-background: white;
-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: white;
+    width: 100%;
 }
+
 .carousel-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
 }
-.resume-button{
-  margin-top: 2rem;
-  padding: 1rem;
-  width: 30%;
-  
+
+.resume-button {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 30%;
 }
-.resume-button:hover{
-  animation: drop-shadow 300ms ease-in-out;
-  animation-fill-mode: forwards;
+
+.resume-button:hover {
+    animation: drop-shadow 300ms ease-in-out;
+    animation-fill-mode: forwards;
 }
-@keyframes drop-shadow{
-  from{
-    box-shadow: 0px 0px 0px rgba(0,0,0,0);
-  }
-  to{
-    box-shadow: 5px 7px 5px rgba(158, 216, 162, 0.6);
-  }
+
+@keyframes drop-shadow {
+    from {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 5px 7px 5px rgba(158, 216, 162, 0.6);
+    }
+}
+
+@keyframes drop-shadow-black {
+    from {
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    }
+    to {
+        box-shadow: 3px 4px 3px rgba(94, 96, 101, 0.6);
+    }
+}
+
+.typewriter h1 {
+    opacity: 0;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    animation: typing 2800ms steps(40, end);
+    animation-delay: 800ms;
+    animation-fill-mode: forwards;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+    from {
+        width: 0;
+        opacity: 1;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+
+#about {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    filter: hue-rotate(3deg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-column {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+}
+
+.table td {
+    font-size: 1.1rem;
+}
+
+.btn-certificate:hover {
+    animation: drop-shadow-black 300ms ease-in-out;
+    animation-fill-mode: forwards;
 }
