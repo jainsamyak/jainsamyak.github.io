@@ -209,16 +209,15 @@ section.resume-section .resume-item .resume-date {
     .resume-button {
         width: 100% !important;
     }
+    .project{
+        flex-direction: column;
+    }
     h1{
         font-size: 4rem !important;
     }
     .about-column {
         background: rgba(255, 255, 255, 0.8);
         padding: 1.5rem !important;
-    }
-    .project {
-        flex-direction: column;
-        max-height: 30vh;
     }
     .carousel-item {
         max-height: 70vh !important;
@@ -285,6 +284,7 @@ a:active {
     bottom: 0;
     position: absolute;
     width: 100%;
+    z-index: 100;
 }
 
 .project-content {
@@ -326,7 +326,7 @@ hr {
 .carousel-item {
     height: 100vh;
     overflow: hidden;
-    background: white;
+    background: rgba(25, 95, 199, 0.2) !important;
     width: 100%;
 }
 
@@ -410,4 +410,8 @@ hr {
 .btn-certificate:hover {
     animation: drop-shadow-black 300ms ease-in-out;
     animation-fill-mode: forwards;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    padding: 2rem;
 }
