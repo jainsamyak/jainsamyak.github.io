@@ -209,6 +209,13 @@ section.resume-section .resume-item .resume-date {
     .resume-button {
         width: 100% !important;
     }
+    h1{
+        font-size: 4rem !important;
+    }
+    .about-column {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 1.5rem !important;
+    }
     .project {
         flex-direction: column;
         max-height: 30vh;
@@ -324,10 +331,7 @@ hr {
 }
 
 .carousel-item img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
+    width: 100%;
 }
 
 .resume-button {
@@ -394,6 +398,7 @@ hr {
 }
 
 .about-column {
+    max-width: 100%;
     background: rgba(255, 255, 255, 0.8);
     padding: 2rem;
 }
