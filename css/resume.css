@@ -278,7 +278,6 @@ a:hover,
 a:focus,
 a:active {
     text-decoration: none;
-    color: #77a3e4;
 }
 
 /* More Custo CSS */
@@ -358,6 +357,10 @@ hr {
     animation-fill-mode: forwards;
 }
 
+.awards li{
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
 @keyframes drop-shadow {
     from {
         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
